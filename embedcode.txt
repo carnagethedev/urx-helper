@@ -1,0 +1,9 @@
+@slash.slash(name="embed", description="Slash command for embed")
+async def slash_embed(ctx: SlashContext):
+    embed = discord.Embed(
+        title="⚠️New Update⚠️",
+        description="How is the new server looking, guys?",
+        color=0x01f9f5
+    )
+    embed.set_thumbnail(url="https://media.discordapp.net/attachments/1045333598267506748/1120305889820287016/IMG_3976.png")
+    await ctx.send(embed=embed)
